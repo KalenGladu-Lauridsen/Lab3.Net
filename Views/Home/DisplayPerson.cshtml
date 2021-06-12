@@ -1,0 +1,31 @@
+﻿@model Lab3Cs.Models.Person
+@{
+    Layout = "_Layout";
+    ViewData["Title"] = "Display Person";
+}
+<table>
+    <tr>
+        <td>First Name:</td>
+        <td>@Model.FirstName</td>
+    </tr>
+    <tr>
+        <td>Last Name:</td>
+        <td>@Model.FirstName</td>
+    </tr>
+    <tr>
+        <td>Age:</td>
+        <td>@Model.Age</td>
+    </tr>
+    <tr>
+        <td>Email Address:</td>
+        <td>@Model.EmailAddress</td>
+    </tr>
+    <tr>
+        <td>Date of Birth:</td>
+        <td>@Model.BirthDay</td>
+    </tr>
+    <tr>
+        <td>Description of Person:</td>
+        <td>@Model.PersonDescription</td>
+    </tr>
+</table>

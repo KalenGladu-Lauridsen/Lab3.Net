@@ -1,0 +1,19 @@
+﻿@using Microsoft.AspNetCore.Http;
+
+@{
+    Layout = "_Layout";
+    var i = 0;
+    Int32 entered = Convert.ToInt32(Context.Session.GetString("bottleAmount"));
+}
+@for (i = entered; i >= 0; i--)
+{
+    <p>
+        @i  green bottlees standing on the wall,<br />
+        @i green bottlees standing on the wall,<br />
+        And if one green bottle should accidentally fall,<br />
+        There'll be @(i-1) green bottles standing on the wall.
+    </p>
+    <br />
+    <br />
+}
+<p>There is no green bottle standing on the wall.</p>

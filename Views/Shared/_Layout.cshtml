@@ -1,0 +1,25 @@
+﻿<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>@ViewBag.Title</title>
+    <link href="~/css/StyleSheet.css" rel="stylesheet" />
+</head>
+<body>
+    <header>
+        <h1>Kalen Gladu-Lauridsen</h1>
+        <h2>Welcom to lab 3!</h2>
+        @Html.ActionLink("Home", "Index", "Home")
+        @Html.ActionLink("Show the song!", "Razor", "Home")
+        @Html.ActionLink("Persons", "CreatePerson", "Home")
+    </header>
+    <div class="content">
+        @RenderBody()
+    </div>
+    <footer>
+        <h2>The layout _Layout.cshtml is the default layout for the ASP.NET Core app. A layout is what the what will be rendered when a user accesses the web page.</h2>
+        <h2>This layout in put under the directory Views/Shared since this is a view and it will be the default view shared amoung all pages. The css file has been but int the wwwroot/css folder since it is a static file and can easily be accessed.</h2>
+    </footer>
+</body>
+</html>
